@@ -1,0 +1,9 @@
+<h1>Destinations Show Page</h1>
+
+<h1><%= @destination.name %></h1>
+<h3><%= @destination.country %></h3>
+<p>most recent: <% @most_recent.each do |post| %></p>
+  <p> a post - <%= link_to post.title, post_path(post.id) %></p>
+<% end %>
+
+<p>average age: <%= @average_age  %></p>
